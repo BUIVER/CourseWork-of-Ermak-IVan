@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B9B483F2183145F0023BFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B483E2183145F0023BFA3 /* AppDelegate.swift */; };
+		4B9B48412183145F0023BFA3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48402183145F0023BFA3 /* RootViewController.swift */; };
+		4B9B48432183145F0023BFA3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48422183145F0023BFA3 /* DataViewController.swift */; };
+		4B9B48452183145F0023BFA3 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48442183145F0023BFA3 /* ModelController.swift */; };
+		4B9B48482183145F0023BFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B48462183145F0023BFA3 /* Main.storyboard */; };
+		4B9B484A218314610023BFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B4849218314610023BFA3 /* Assets.xcassets */; };
+		4B9B484D218314610023BFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B484B218314610023BFA3 /* LaunchScreen.storyboard */; };
+		4B9B4858218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B4857218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B9B4854218314610023BFA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B9B48332183145F0023BFA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B9B483A2183145F0023BFA3;
+			remoteInfo = "CourseWork of Ermak IVan";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B9B483B2183145F0023BFA3 /* CourseWork of Ermak IVan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CourseWork of Ermak IVan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9B483E2183145F0023BFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B9B48402183145F0023BFA3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		4B9B48422183145F0023BFA3 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		4B9B48442183145F0023BFA3 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		4B9B48472183145F0023BFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B9B4849218314610023BFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B9B484C218314610023BFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B9B484E218314610023BFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9B4853218314610023BFA3 /* CourseWork of Ermak IVanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CourseWork of Ermak IVanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B9B4857218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseWork_of_Ermak_IVanTests.swift; sourceTree = "<group>"; };
+		4B9B4859218314610023BFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B9B48382183145F0023BFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9B4850218314610023BFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B9B48322183145F0023BFA3 = {
+			isa = PBXGroup;
+			children = (
+				4B9B483D2183145F0023BFA3 /* CourseWork of Ermak IVan */,
+				4B9B4856218314610023BFA3 /* CourseWork of Ermak IVanTests */,
+				4B9B483C2183145F0023BFA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B9B483C2183145F0023BFA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B483B2183145F0023BFA3 /* CourseWork of Ermak IVan.app */,
+				4B9B4853218314610023BFA3 /* CourseWork of Ermak IVanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9B483D2183145F0023BFA3 /* CourseWork of Ermak IVan */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B483E2183145F0023BFA3 /* AppDelegate.swift */,
+				4B9B48402183145F0023BFA3 /* RootViewController.swift */,
+				4B9B48422183145F0023BFA3 /* DataViewController.swift */,
+				4B9B48442183145F0023BFA3 /* ModelController.swift */,
+				4B9B48462183145F0023BFA3 /* Main.storyboard */,
+				4B9B4849218314610023BFA3 /* Assets.xcassets */,
+				4B9B484B218314610023BFA3 /* LaunchScreen.storyboard */,
+				4B9B484E218314610023BFA3 /* Info.plist */,
+			);
+			path = "CourseWork of Ermak IVan";
+			sourceTree = "<group>";
+		};
+		4B9B4856218314610023BFA3 /* CourseWork of Ermak IVanTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B4857218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift */,
+				4B9B4859218314610023BFA3 /* Info.plist */,
+			);
+			path = "CourseWork of Ermak IVanTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B9B483A2183145F0023BFA3 /* CourseWork of Ermak IVan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9B485C218314610023BFA3 /* Build configuration list for PBXNativeTarget "CourseWork of Ermak IVan" */;
+			buildPhases = (
+				4B9B48372183145F0023BFA3 /* Sources */,
+				4B9B48382183145F0023BFA3 /* Frameworks */,
+				4B9B48392183145F0023BFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CourseWork of Ermak IVan";
+			productName = "CourseWork of Ermak IVan";
+			productReference = 4B9B483B2183145F0023BFA3 /* CourseWork of Ermak IVan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B9B4852218314610023BFA3 /* CourseWork of Ermak IVanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B9B485F218314610023BFA3 /* Build configuration list for PBXNativeTarget "CourseWork of Ermak IVanTests" */;
+			buildPhases = (
+				4B9B484F218314610023BFA3 /* Sources */,
+				4B9B4850218314610023BFA3 /* Frameworks */,
+				4B9B4851218314610023BFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9B4855218314610023BFA3 /* PBXTargetDependency */,
+			);
+			name = "CourseWork of Ermak IVanTests";
+			productName = "CourseWork of Ermak IVanTests";
+			productReference = 4B9B4853218314610023BFA3 /* CourseWork of Ermak IVanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B9B48332183145F0023BFA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ivan Ermak";
+				TargetAttributes = {
+					4B9B483A2183145F0023BFA3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4B9B4852218314610023BFA3 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4B9B483A2183145F0023BFA3;
+					};
+				};
+			};
+			buildConfigurationList = 4B9B48362183145F0023BFA3 /* Build configuration list for PBXProject "CourseWork of Ermak IVan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B9B48322183145F0023BFA3;
+			productRefGroup = 4B9B483C2183145F0023BFA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B9B483A2183145F0023BFA3 /* CourseWork of Ermak IVan */,
+				4B9B4852218314610023BFA3 /* CourseWork of Ermak IVanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B9B48392183145F0023BFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9B484D218314610023BFA3 /* LaunchScreen.storyboard in Resources */,
+				4B9B484A218314610023BFA3 /* Assets.xcassets in Resources */,
+				4B9B48482183145F0023BFA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9B4851218314610023BFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B9B48372183145F0023BFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9B48412183145F0023BFA3 /* RootViewController.swift in Sources */,
+				4B9B48452183145F0023BFA3 /* ModelController.swift in Sources */,
+				4B9B48432183145F0023BFA3 /* DataViewController.swift in Sources */,
+				4B9B483F2183145F0023BFA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B9B484F218314610023BFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9B4858218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B9B4855218314610023BFA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B9B483A2183145F0023BFA3 /* CourseWork of Ermak IVan */;
+			targetProxy = 4B9B4854218314610023BFA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B9B48462183145F0023BFA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B9B48472183145F0023BFA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B9B484B218314610023BFA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B9B484C218314610023BFA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B9B485A218314610023BFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B9B485B218314610023BFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B9B485D218314610023BFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ9VQAV4WM;
+				INFOPLIST_FILE = "CourseWork of Ermak IVan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CourseWork-of-Ermak-IVan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B9B485E218314610023BFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ9VQAV4WM;
+				INFOPLIST_FILE = "CourseWork of Ermak IVan/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CourseWork-of-Ermak-IVan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B9B4860218314610023BFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ9VQAV4WM;
+				INFOPLIST_FILE = "CourseWork of Ermak IVanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CourseWork-of-Ermak-IVanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseWork of Ermak IVan.app/CourseWork of Ermak IVan";
+			};
+			name = Debug;
+		};
+		4B9B4861218314610023BFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ9VQAV4WM;
+				INFOPLIST_FILE = "CourseWork of Ermak IVanTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.CourseWork-of-Ermak-IVanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CourseWork of Ermak IVan.app/CourseWork of Ermak IVan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B9B48362183145F0023BFA3 /* Build configuration list for PBXProject "CourseWork of Ermak IVan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9B485A218314610023BFA3 /* Debug */,
+				4B9B485B218314610023BFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9B485C218314610023BFA3 /* Build configuration list for PBXNativeTarget "CourseWork of Ermak IVan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9B485D218314610023BFA3 /* Debug */,
+				4B9B485E218314610023BFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B9B485F218314610023BFA3 /* Build configuration list for PBXNativeTarget "CourseWork of Ermak IVanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9B4860218314610023BFA3 /* Debug */,
+				4B9B4861218314610023BFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B9B48332183145F0023BFA3 /* Project object */;
+}
