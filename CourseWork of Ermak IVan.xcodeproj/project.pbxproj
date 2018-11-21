@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B031F0A219C440600DD847B /* GraphMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B031F09219C440600DD847B /* GraphMultiView.swift */; };
+		4B88DEEF219D6D0E00589615 /* TheoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88DEEE219D6D0E00589615 /* TheoryTableViewCell.swift */; };
 		4B9B483F2183145F0023BFA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B483E2183145F0023BFA3 /* AppDelegate.swift */; };
-		4B9B48412183145F0023BFA3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48402183145F0023BFA3 /* RootViewController.swift */; };
-		4B9B48432183145F0023BFA3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48422183145F0023BFA3 /* DataViewController.swift */; };
-		4B9B48452183145F0023BFA3 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B48442183145F0023BFA3 /* ModelController.swift */; };
 		4B9B48482183145F0023BFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B48462183145F0023BFA3 /* Main.storyboard */; };
 		4B9B484A218314610023BFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B4849218314610023BFA3 /* Assets.xcassets */; };
 		4B9B484D218314610023BFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B484B218314610023BFA3 /* LaunchScreen.storyboard */; };
 		4B9B4858218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B4857218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift */; };
+		4B9B4863218314C40023BFA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B4862218314C40023BFA3 /* ViewController.swift */; };
+		4BF4D0F02190519100F2B194 /* GraphDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4D0EF2190519100F2B194 /* GraphDrawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B031F09219C440600DD847B /* GraphMultiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMultiView.swift; sourceTree = "<group>"; };
+		4B88DEEE219D6D0E00589615 /* TheoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheoryTableViewCell.swift; sourceTree = "<group>"; };
 		4B9B483B2183145F0023BFA3 /* CourseWork of Ermak IVan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CourseWork of Ermak IVan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9B483E2183145F0023BFA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B9B48402183145F0023BFA3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		4B9B48422183145F0023BFA3 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		4B9B48442183145F0023BFA3 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		4B9B48472183145F0023BFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B9B4849218314610023BFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B9B484C218314610023BFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		4B9B4853218314610023BFA3 /* CourseWork of Ermak IVanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CourseWork of Ermak IVanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9B4857218314610023BFA3 /* CourseWork_of_Ermak_IVanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseWork_of_Ermak_IVanTests.swift; sourceTree = "<group>"; };
 		4B9B4859218314610023BFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9B4862218314C40023BFA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BF4D0EF2190519100F2B194 /* GraphDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDrawing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +83,12 @@
 		4B9B483D2183145F0023BFA3 /* CourseWork of Ermak IVan */ = {
 			isa = PBXGroup;
 			children = (
+				4B9B4862218314C40023BFA3 /* ViewController.swift */,
 				4B9B483E2183145F0023BFA3 /* AppDelegate.swift */,
-				4B9B48402183145F0023BFA3 /* RootViewController.swift */,
-				4B9B48422183145F0023BFA3 /* DataViewController.swift */,
-				4B9B48442183145F0023BFA3 /* ModelController.swift */,
 				4B9B48462183145F0023BFA3 /* Main.storyboard */,
+				4B88DEEE219D6D0E00589615 /* TheoryTableViewCell.swift */,
+				4B031F09219C440600DD847B /* GraphMultiView.swift */,
+				4BF4D0EF2190519100F2B194 /* GraphDrawing.swift */,
 				4B9B4849218314610023BFA3 /* Assets.xcassets */,
 				4B9B484B218314610023BFA3 /* LaunchScreen.storyboard */,
 				4B9B484E218314610023BFA3 /* Info.plist */,
@@ -203,10 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B9B48412183145F0023BFA3 /* RootViewController.swift in Sources */,
-				4B9B48452183145F0023BFA3 /* ModelController.swift in Sources */,
-				4B9B48432183145F0023BFA3 /* DataViewController.swift in Sources */,
+				4BF4D0F02190519100F2B194 /* GraphDrawing.swift in Sources */,
+				4B9B4863218314C40023BFA3 /* ViewController.swift in Sources */,
 				4B9B483F2183145F0023BFA3 /* AppDelegate.swift in Sources */,
+				4B031F0A219C440600DD847B /* GraphMultiView.swift in Sources */,
+				4B88DEEF219D6D0E00589615 /* TheoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
