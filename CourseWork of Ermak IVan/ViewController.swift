@@ -15,11 +15,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     @IBOutlet weak var optimizeView: UIView!
-    @IBOutlet weak var optimizeViews: UIBarButtonItem!
-    @IBOutlet weak var swapViews: UIBarButtonItem!
-    @IBOutlet weak var theoryView: UIView!
-    @IBOutlet weak var graphView: GraphMultiView!
-    @IBOutlet weak var theoryTable: UITableView!
+    @IBOutlet weak var optimizeViews: UIButton!
+
     
     var definitionList: [Int: String]! = [0: "Число каналов обслуживания", 1: " Максимальная длина очереди(Максимальное число мест в очереди"]
     var valueList: [Int: String]! = [0: "n ≧ 1", 1: "m = +∞"]
@@ -44,10 +41,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        theoryTable.dataSource = self
-        theoryTable.delegate = self
-        graphView.isHidden = true
-        optimizeView.isHidden = true
+        
+      
         //theoryButton.image = UIImage(named: "bookImage")
         
        
@@ -56,17 +51,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: - Navigation
 
-     @IBAction func SwapViews(_ sender: Any) {
-        theoryView.isHidden = !theoryView.isHidden
-        graphView.isHidden = !graphView.isHidden
-        optimizeView.isHidden = true
-     }
-    
+   
      @IBAction func OptimizeViews(_ sender: Any) {
-        theoryView.isHidden = true
-        optimizeView.isHidden = !optimizeView.isHidden
-        graphView.isHidden = true
-        multiLineSMService(Cost: 3, AFKcost: 70, money: 40)
+       
+    
+        let smsclassic = SMSclassic()
+        let smsAllAsOne = SMSAllAsOne()
+        let smsBalancedHelp = SMSBalancedHelp()
+       smsclassic.multiLineSMService(Cost: 3, AFKcost: 70, money: 40)
+        smsAllAsOne.multiLineSMService(Cost: 3, AFKcost: 70, money: 40)
+        smsBalancedHelp.multiLineSMService(Cost: 3, AFKcost: 70, money: 40)
      }
     
     
@@ -79,6 +73,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     */
 
+    
+}
+class Math
+{
+    func factorial(numeral: Int) -> Double
+    {
+        var result : Double = 1
+        if (numeral == 0) {return 1}
+        else{
+            for k in 1...numeral
+            {
+                result *= Double(k)
+            }
+            return result
+        }
+    }
+}
+class SMSAllAsOne
+{
+    let math = Math()
     func multiLineSMService(Cost: Double, AFKcost : Double, money: Double)
     {
         var amountOfWorkPlaces: Int = 1
@@ -87,20 +101,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         var min : Double
         var moneyBag = money
         let intensive: Double = 4
-        let Produce: Double = 4
-        var cost = Cost
+        let Produce: Double = 5
+        let cost = Cost
         let traffic: Double = intensive/Produce
         let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
         minimalSpends = inQueue(amount: 1, trafficForOne: trafficOnOne)
-        while(money - cost > 0)
+        while(moneyBag - cost > 0)
         {
             moneyBag -= cost
-            cost *= 1.2
+            
             amountOfWorkPlaces += 1
             let traffic: Double = intensive/Produce
             let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
-            debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
-            debugPrint("")
+            //debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
+            debugPrint("All as one")
             min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
             debugPrint(min.description)
             if (minimalSpends < min)
@@ -108,33 +122,106 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 minimalSpends = min
                 
             }
-          //  if(min < )
+            //  if(min < )
         }
     }
     func inQueue(amount: Int, trafficForOne: Double) -> Double
     {
-       return pow(Double(amount), Double(amount))/Double(factorial(numeral: amount)) * (pow(trafficForOne, Double(amount+1)) / pow(1 - trafficForOne, 2)) * probabilityAllFree(amount: amount, trafficForOne: trafficForOne)
+        return pow(trafficForOne, 2) / (1-trafficForOne)
     }
-    func probabilityAllFree(amount: Int, trafficForOne: Double) -> Double
+    
+}
+class SMSclassic
+{
+    
+let math = Math()
+func multiLineSMService(Cost: Double, AFKcost : Double, money: Double)
+{
+    var amountOfWorkPlaces: Int = 1
+    
+    var minimalSpends: Double
+    var min : Double
+    var moneyBag = money
+    let intensive: Double = 4
+    let Produce: Double = 5
+    let cost = Cost
+    let traffic: Double = intensive/Produce
+    let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
+    minimalSpends = inQueue(amount: 2, trafficForOne: trafficOnOne)
+    while(moneyBag - cost > 0)
     {
-        var sum: Double = 0
-        for k in 0...amount
+        moneyBag -= cost
+        
+        amountOfWorkPlaces += 1
+        let traffic: Double = intensive/Produce
+        let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
+     //   debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
+       
+        min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
+        debugPrint(min.description)
+         debugPrint("Classic")
+        if (minimalSpends < min)
         {
-            sum += pow(Double(amount), Double(k))/Double(factorial(numeral: k)) * pow(trafficForOne, Double(k))
+            minimalSpends = min
+            
         }
-        sum += (pow(Double(amount), Double(amount))/Double(factorial(numeral: amount)) * (pow(trafficForOne, Double(amount+1)) / 1 - trafficForOne))
-        return 1/sum
+        //  if(min < )
     }
-    func factorial(numeral: Int) -> Int
+}
+func inQueue(amount: Int, trafficForOne: Double) -> Double
+{
+    return pow(Double(amount), Double(amount))/Double(math.factorial(numeral: amount)) * (pow(trafficForOne, Double(amount+1)) / pow(1 - trafficForOne, 2)) * probabilityAllFree(amount: amount, trafficForOne: trafficForOne)
+}
+func probabilityAllFree(amount: Int, trafficForOne: Double) -> Double
+{
+    var sum: Double = 0
+    for k in 0...amount
     {
-        var result : Int = 1
-        if (numeral == 0) {return 1}
-        else{
-        for k in 1...numeral
+        sum += pow(Double(amount), Double(k))/Double(math.factorial(numeral: k)) * pow(trafficForOne, Double(k))
+    }
+    sum += (pow(Double(amount), Double(amount))/Double(math.factorial(numeral: amount)) * (pow(trafficForOne, Double(amount+1)) / (1 - trafficForOne)))
+  //  debugPrint(sum, "  ")
+    return 1/sum
+}
+}
+class SMSBalancedHelp
+{
+    let math = Math()
+    func multiLineSMService(Cost: Double, AFKcost : Double, money: Double)
+    {
+        var amountOfWorkPlaces: Int = 1
+        
+        var minimalSpends: Double
+        var min : Double
+        var moneyBag = money
+        let intensive: Double = 4
+        let Produce: Double = 5
+        let cost = Cost
+        let traffic: Double = intensive/Produce
+        let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
+        minimalSpends = inQueue(amount: 1, trafficForOne: trafficOnOne)
+        while(moneyBag - cost > 0)
         {
-            result *= k
-        }
-        return result
+            moneyBag -= cost
+            
+            amountOfWorkPlaces += 1
+            let traffic: Double = intensive/Produce
+            let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
+            //debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
+            debugPrint("Balanced")
+            min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
+            debugPrint(min.description)
+            if (minimalSpends < min)
+            {
+                minimalSpends = min
+                
+            }
+            //  if(min < )
         }
     }
+    func inQueue(amount: Int, trafficForOne: Double) -> Double
+    {
+        return pow(trafficForOne, Double(amount+1)) / (1-trafficForOne)
+    }
+    
 }
