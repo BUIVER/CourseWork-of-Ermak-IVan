@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController{
     
  
  
@@ -18,38 +18,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var optimizeViews: UIButton!
 
     
-    var definitionList: [Int: String]! = [0: "Число каналов обслуживания", 1: " Максимальная длина очереди(Максимальное число мест в очереди"]
-    var valueList: [Int: String]! = [0: "n ≧ 1", 1: "m = +∞"]
-    
-    func tableView(_ theoryTable: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return definitionList.count
-    }
-    
-     func tableView(_ theoryTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        debugPrint("trigger")
-        guard let cell = theoryTable.dequeueReusableCell(withIdentifier: "TheoryTableViewCell", for: indexPath) as? TheoryTableViewCell else {fatalError("error of init cell")}
-        cell.definitionCell.text = definitionList![indexPath.row]
-        cell.valueCell.text = valueList![indexPath.row]
-        cell.definitionCell.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0).cgColor
-        cell.definitionCell.layer.borderWidth = 3
-        cell.valueCell.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0).cgColor
-        cell.valueCell.layer.borderWidth = 3
-        return cell
-    }
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
       
-        //theoryButton.image = UIImage(named: "bookImage")
-        
-       
-        // Do any additional setup after loading the view.
     }
-    
-    // MARK: - Navigation
 
    
      @IBAction func OptimizeViews(_ sender: Any) {
@@ -65,14 +39,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    /*
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     
 }
 class Math
@@ -113,16 +79,12 @@ class SMSAllAsOne
             amountOfWorkPlaces += 1
             let traffic: Double = intensive/Produce
             let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
-            //debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
-            debugPrint("All as one")
             min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
-            debugPrint(min.description)
             if (minimalSpends < min)
             {
                 minimalSpends = min
                 
             }
-            //  if(min < )
         }
     }
     func inQueue(amount: Int, trafficForOne: Double) -> Double
@@ -155,17 +117,12 @@ func multiLineSMService(Cost: Double, AFKcost : Double, money: Double)
         amountOfWorkPlaces += 1
         let traffic: Double = intensive/Produce
         let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
-     //   debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
-       
         min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
-        debugPrint(min.description)
-         debugPrint("Classic")
         if (minimalSpends < min)
         {
             minimalSpends = min
             
         }
-        //  if(min < )
     }
 }
 func inQueue(amount: Int, trafficForOne: Double) -> Double
@@ -180,7 +137,6 @@ func probabilityAllFree(amount: Int, trafficForOne: Double) -> Double
         sum += pow(Double(amount), Double(k))/Double(math.factorial(numeral: k)) * pow(trafficForOne, Double(k))
     }
     sum += (pow(Double(amount), Double(amount))/Double(math.factorial(numeral: amount)) * (pow(trafficForOne, Double(amount+1)) / (1 - trafficForOne)))
-  //  debugPrint(sum, "  ")
     return 1/sum
 }
 }
@@ -207,16 +163,12 @@ class SMSBalancedHelp
             amountOfWorkPlaces += 1
             let traffic: Double = intensive/Produce
             let trafficOnOne: Double = traffic / Double(amountOfWorkPlaces)
-            //debugPrint(inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne))
-            debugPrint("Balanced")
             min = (inQueue(amount: amountOfWorkPlaces, trafficForOne: trafficOnOne) * AFKcost) + (money - moneyBag)
-            debugPrint(min.description)
             if (minimalSpends < min)
             {
                 minimalSpends = min
                 
             }
-            //  if(min < )
         }
     }
     func inQueue(amount: Int, trafficForOne: Double) -> Double
